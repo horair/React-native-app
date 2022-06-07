@@ -1,7 +1,8 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 import styles from './style';
-const Dashboard = props => {
+
+const LandingScreen = props => {
   return (
     <View style={styles.mainContainer}>
       <Text>This is the dashboard page.</Text>
@@ -10,4 +11,4 @@ const Dashboard = props => {
   );
 };
 
-export default Dashboard;
+export default LandingScreen;

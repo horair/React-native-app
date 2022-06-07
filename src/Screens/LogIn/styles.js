@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   lastContainer: {
     position: 'absolute',
     width: 370,
-    height: 36,
+    height: 56,
     top: 816,
     left: 18,
   },

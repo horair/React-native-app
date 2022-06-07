@@ -21,7 +21,7 @@ const SignUp = props => {
     props.navigation.navigate(Navigationstrings.Login);
   };
   return (
-    <ScrollView contentContainerStyle={{flexGrow: 1, height: '120%'}}>
+    <ScrollView contentContainerStyle={{flexGrow: 1, height: '130%'}}>
       <View style={styles.mainContainer}>
         <Image style={styles.logo} source={Logo} />
         <Image style={styles.logo2} source={Logo2} />

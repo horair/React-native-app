@@ -20,15 +20,15 @@ const LogIn = props => {
   const navigateToSignUp = () => {
     props.navigation.navigate(Navigationstrings.Signup);
   };
-  const navigateToDashboard = () => {
-    props.navigation.navigate(Navigationstrings.LandingPage);
+  const navigateToMainScreen = () => {
+    props.navigation.navigate(Navigationstrings.MainScreen);
   };
   const navigateToForgotPassword = () => {
     props.navigation.navigate(Navigationstrings.Forgotpassword);
   };
   return (
     <View style={styles.mainContainer}>
-      <ScrollView contentContainerStyle={{flexGrow: 1, height: '120%'}}>
+      <ScrollView contentContainerStyle={{flexGrow: 1, height: '130%'}}>
         <TouchableOpacity
           onPress={() => {
             navigateToSignUp();
@@ -62,7 +62,7 @@ const LogIn = props => {
         <TouchableOpacity
           style={styles.btn2}
           onPress={() => {
-            navigateToDashboard();
+            navigateToMainScreen();
           }}>
           <Text style={styles.btn2text}>{StaticText.Login_2}</Text>
         </TouchableOpacity>

@@ -3,12 +3,13 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import Navigationstrings from './Navigationstrings';
+import TabNavigator from './TabNavigator';
 
 import {default as LogIn} from '../src/Screens/LogIn/index';
 import {default as SignUp} from '../src/Screens/SignUp/index';
 import {default as ForgotPassword} from '../src/Screens/ForgotPassword/index';
 import {default as ResetPassword} from '../src/Screens/ResetPassword/index';
-import {default as Dashboard} from '../src/Screens/Dashboard/index';
+import {default as MainLandingScreen} from '../src/Screens/MainLandingSceen/Index';
 
 const AuthStack = createNativeStackNavigator();
 function Navigator(props) {
@@ -29,7 +30,11 @@ function Navigator(props) {
         />
         <AuthStack.Screen
           name={Navigationstrings.LandingPage}
-          component={Dashboard}
+          component={TabNavigator}
+        />
+        <AuthStack.Screen
+          name={Navigationstrings.MainScreen}
+          component={MainLandingScreen}
         />
       </AuthStack.Navigator>
     </NavigationContainer>
